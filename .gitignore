@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+# ignore for intellij
+.idea
+
+# ignore for python
+*.pyc
+
+# ignore for mac
+.DS_Store
+
+# ignore log and device data but keep the folder structure
+data/*
+!data/README.md
+
+log/bib-reader/*
+!log/bib-reader/README.md
+
+log/bib-server/*
+!log/bib-server/README.md
