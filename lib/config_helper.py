@@ -22,4 +22,4 @@ class ConfigHelper(object):
 
 if __name__ == '__main__':
     _test_file = '../configuration.properties'
-    print (ConfigHelper.parse(_test_file))
+    print (ConfigHelper.parse(_test_file)['DEVICE_TYPE'])

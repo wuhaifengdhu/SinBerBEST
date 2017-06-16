@@ -86,6 +86,10 @@ class SystemHelper(object):
             SystemHelper.make_dir(full_path, delete_if_exist=False)
         return full_path
 
+    @staticmethod
+    def exist(path_or_folder):
+        return path.exists(path_or_folder)
+
 
 if __name__ == '__main__':
     # _directory = ''

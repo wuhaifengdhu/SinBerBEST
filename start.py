@@ -14,10 +14,11 @@ def start_bib_reader(config_file='configuration.properties'):
     bib_data_folder = property_dict['SFTPWORKINGDIR']
     log_file = property_dict['BIB_READ_LOG_FILE']
     _server_url = property_dict['POST_SERVER_URL']
+    _device_type = property_dict['DEVICE_TYPE']
 
     # step 2. Start service to read
     try:
-        FlaskHelper.start_read_service(bib_data_folder, log_file, server_url=_server_url)
+        FlaskHelper.start_read_service(bib_data_folder, log_file, _device_type, server_url=_server_url)
     except KeyboardInterrupt:
         print ("Service stopped as user interrupt from user command!")
 

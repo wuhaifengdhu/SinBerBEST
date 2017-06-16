@@ -7,7 +7,7 @@ class HttpHelper(object):
     @staticmethod
     def post(url, data_dict):
         print "Post with data ", data_dict
-        response = requests.post(url, data_dict)
+        response = requests.post(url, data=data_dict)
         return response.status_code, response.reason
 
 
